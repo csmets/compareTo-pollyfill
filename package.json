@@ -1,0 +1,29 @@
+{
+  "name": "compareto-pollyfill",
+  "version": "1.0.0",
+  "description": "Javacript pollyfill of Java's string compareTo",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --config=jest.config.js",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csmets/compareTo-pollyfill.git"
+  },
+  "author": "Clyde Smets",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/csmets/compareTo-pollyfill/issues"
+  },
+  "homepage": "https://github.com/csmets/compareTo-pollyfill#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "babel-jest": "^26.3.0",
+    "babel-loader": "^8.1.0",
+    "jest": "^26.4.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
