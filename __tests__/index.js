@@ -8,6 +8,18 @@ describe('Test string compareTo functionality', () => {
         expect(result).toEqual(12);
     });
 
+    it('should give correct result using space character', () => {
+        const string = 'Hi, Anna';
+        const result = string.compareTo('Hi,Tom');
+        expect(result).toEqual(116);
+    });
+
+    it('should return 0 if characters are the same', () => {
+        const string = 'H';
+        const result = string.compareTo('H');
+        expect(result).toEqual(0);
+    });
+
     it('should not allow null values', () => {
         const string = 'test';
         expect(() => { string.compareTo(null) }).toThrow();

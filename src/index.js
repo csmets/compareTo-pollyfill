@@ -3,10 +3,6 @@
 
     if (!String.prototype.compareTo) {
         String.prototype.compareTo = function(str) {
-            if (this == null) {
-                throw TypeError('"this" is null or not defined');
-            }
-
             if (typeof str !== 'string') {
                 throw TypeError('str must be of type string');
             }
@@ -25,7 +21,7 @@
                 if(compare1 !== compare2) {
 
                     // Space character (char code 32)
-                    if(compare1.charCodeAt(0) == 32 )
+                    if(compare1.charCodeAt(0) == 32)
                     {
                         // Sum characters if compared char is a space
                         return compare1.charCodeAt(0) + compare2.charCodeAt(0); 
