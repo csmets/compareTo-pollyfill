@@ -2,7 +2,7 @@
   "name": "compareto-pollyfill",
   "version": "1.0.0",
   "description": "Javacript pollyfill of Java's string compareTo",
-  "main": "index.js",
+  "main": "dist/main.js",
   "scripts": {
     "test": "jest --collectCoverage --config=jest.config.js",
     "build": "webpack"
